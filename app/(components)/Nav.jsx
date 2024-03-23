@@ -1,4 +1,9 @@
-import { faHome, faTicket } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faSignInAlt,
+  faTicket,
+  faRightFromBracket,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
@@ -14,7 +19,15 @@ const Nav = () => {
         </Link>
       </div>
       <div>
-        <p className="text-default-text">alvinmarco7@gmail.com</p>
+        <p className="text-default-text">Welcome, Alvin</p>
+      </div>
+      <div className="flex items-center space-x-4">
+        <Link href="/TicketPage/new">
+          <FontAwesomeIcon icon={faSignInAlt} className="icon" />
+        </Link>
+        <Link href="/TicketPage/new">
+          <FontAwesomeIcon icon={faRightFromBracket} className="icon" />
+        </Link>
       </div>
     </nav>
   );
