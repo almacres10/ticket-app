@@ -22,10 +22,10 @@ const Nav = () => {
         <p className="text-default-text">Welcome, Alvin</p>
       </div>
       <div className="flex items-center space-x-4">
-        <Link href="/TicketPage/new">
+        <Link href="/signUp/">
           <FontAwesomeIcon icon={faSignInAlt} className="icon" />
         </Link>
-        <Link href="/TicketPage/new">
+        <Link href="/loginPage/">
           <FontAwesomeIcon icon={faRightFromBracket} className="icon" />
         </Link>
       </div>
